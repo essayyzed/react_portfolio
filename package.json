@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^2.11.0",
+    "@sanity/image-url": "^0.140.22",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -17,8 +19,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "npm run test:other && npm run test:code",
+    "eject": "react-scripts eject",
+    "fix:other": "npm run prettier --write",
+    "fix:code": "npm run test:code --fix",
+    "fix": "npm run fix:code && npm run fix:other",
+    "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
+    "test:other": "npm run prettier --list-different",
+    "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx ."
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +47,11 @@
     ]
   },
   "devDependencies": {
+    "eslint": "7.29.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "husky": "6.0.0",
+    "lint-staged": "11.0.0",
     "prettier": "2.3.1"
   }
 }
