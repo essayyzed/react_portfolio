@@ -1,4 +1,4 @@
-import Image from '/home/essayyzed/Documents/react_portfolio/src/monstera.jpg'
+import Image from '../monstera.jpg'
 
 export default function Home() {
     return (
