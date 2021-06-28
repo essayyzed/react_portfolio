@@ -9,7 +9,7 @@ export default function Navbar() {
                     <NavLink
                         to="/"
                         exact
-                        className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
+                        className = "inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-purple-800 text-4xl font-bold cursive tracking-widest"
                         activeClassName="text-white"
                     >
                         ESSAYYZED
@@ -17,7 +17,7 @@ export default function Navbar() {
 
                     <NavLink
                         to="/post"
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+                        className = "inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-purple-800"
                         activeClassName="text-red-100 bg-red-700"
                     >
                         Blog Posts
@@ -25,7 +25,7 @@ export default function Navbar() {
 
                     <NavLink
                         to="/project"
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+                        className = "inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-purple-800"
                         activeClassName="text-red-100 bg-red-700"
                     >
                         Projects
@@ -33,7 +33,7 @@ export default function Navbar() {
 
                     <NavLink
                         to="about"
-                        className="inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
+                        className = "inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-purple-800"
                         activeClassName="text-red-100 bg-red-700"
                     >
                         About Me
